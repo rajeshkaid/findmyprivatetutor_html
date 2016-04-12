@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Tutor</title>
+
+<script type="text/javascript">
+document.createElement("nav" );
+document.createElement("section" );
+document.createElement("footer" );
+</script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,600' rel='stylesheet' type='text/css'>
+
+
+
+<style>
+        .black_overlay{
+            display: none;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+           	z-index:999999;
+            -moz-opacity: 0.5;
+            opacity:.80;
+            filter: alpha(opacity=80);
+        }
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 25%;          
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body id="top">
+	<div class="main_wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" alt="" /></a>
+				</div>
+				<div class="srch">
+					<form method="post" action="">
+						<div class="srch_sec">
+							<input type="text" placeholder="Your Location" />
+						</div>
+						<div class="srch_job">
+							<input type="text" placeholder="Search Jobs.." />
+						</div>
+						<div class="srch_icon">						
+							<input type="submit" value="" />
+						</div>
+					</form>
+				</div>
+				<div class="ttr_avtar">
+					<div class="avtr_img">
+						<a href="#"><img src="images/tutor_pic.png" alt="" /></a>
+					</div>
+					<div class="drop_mnu">
+						<a href="#"><img src="images/drop_img.png" alt="" /></a>
+					</div>
+					<div class="drop_menu">
+						<div class="bg_img">
+							<img src="images/menu_up.png" alt="" />
+						</div>
+						<ul>
+							<li class="active"><a href="#">Sign In</a></li>
+							<li><a href="#">Dashboard</a></li>
+							<li><a href="#">Register as Tutor</a></li>
+							<li><a href="#">Register as Student</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="mid_body">
+			<div class="container">
+				<div class="log_in_pg_sec">
+					<div class="log_in_pg_sec_Inner">
+						<div class="log_in_pg_lft">
+							<img src="images/login_girl_pic.png" alt=""/>
+							<div class="log_in_pg_lft_txt">
+								<p>
+									 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore 
+magna aliqua. Ut enim ad minim veniam, quis nostrud 
+exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+consequat. </p>
+
+ <p>Duis aute irure dolor in reprehenderit in voluptate velit 
+esse cillum dolore eu fugiat nulla pariatur. </p>
+ <p> 
+ Excepteur sint occaecat cupidatat non proident, sunt in 
+culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+							<div id="fade" class="black_overlay"></div>
+							<div class="log_in_logo">
+								<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img src="images/log_in_logo.png" alt=""/></a>
+								<div id="light" class="white_content">
+									<div class="pop-up">
+										<div class="pop-upHdr">
+											<h3>FindMyPrivateTutor.com</h3>
+											<a class="pop-up-close" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/pop-up_close.png"></a>
+										</div>
+										<div class="pop-up-inr">
+											<h4>Welcome!</h4>
+											<h5>Please tell us how would you like to 
+									enter the website</h5>
+									
+											<img src="images/pop-up_img.jpg" class="pop-up_img">
+									
+										</div>
+									</div>								
+        						</div>
+							</div>
+						</div>
+						<div class="log_in_pg_rt">
+							<div class="log_in_pg_rt_Inner">
+								<h3>Login to your Account</h3>
+								<div class="loginpg_fom_inn">
+									<form method="post" action="">
+										<div class="loginpg_form">
+											<input type="text" placeholder="Enter your email address*" />
+										</div>
+										<div class="loginpg_form1">
+											<input type="text" placeholder="Enter your email address*" />
+										</div>
+										<div class="loginpg_formbtm">
+											<input type="submit" value="Log In"/>
+										</div>
+										<div class="loginpg_remem">
+											<div class="prsonprfl_input">
+												<div class="loginpg_remem_input">
+					    							<input type="radio" id="radio1" name="radios" value="all">
+													<label for="radio1">Remember Me</label>
+													<span><a href="#">Forgot Password?</a></span>
+					    						</div>
+					    						<div class="loginpg_or_pic">
+					    							<a href="#"><img src="images/or_img.png" alt=""/></a>
+					    						</div>
+											</div>
+										</div>
+										<div class="loginpg_fblogin">
+											<a href="#">Login with Facebook</a>
+										</div>
+										<div class="loginpg_gollogin">
+											<a href="#">Sign In with Google</a>
+										</div>
+										<div class="loginpg_signup_btm">
+											<a href="#">Don’t have an Account? Sign Up!</a>
+											<span><input type="submit" value="sign up"/></span>
+										</div>
+										<div class="loginpg_signup_btm_para">
+											<p>
+												 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+												 sed do eiusmod tempor incididunt ut labore et 
+												 dolore magna aliqua. Ut enim ad minim veniam, 
+												 quis nostrud exercitation ullamco laboris nisi 
+												 ut aliquip ex ea commodo consequat <span>Premium Membership</span>
+											</p>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="footer">
+			
+			<div class="ftr_bottom">
+				<div class="container">
+					<p class="copy">Copyright &copy;  2015 Findmyprivatetutor.com / All Rights Reserved</p>
+					<ul>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Intellectual Property Rights</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$('#open').click(function(){
+$('#hide').slideToggle();
+});
+});
+</script>
+<script>
+$(function() {
+  $('a.bk_top[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Tutor</title>
+
+<script type="text/javascript">
+document.createElement("nav" );
+document.createElement("section" );
+document.createElement("footer" );
+</script>
+
+
+<script type="text/javascript">
+function fun1(){
+$('#tab1 a').addClass('select');
+$('#tab2 a').removeClass('select');
+$('#tab3 a').removeClass('select');
+$('#tab4 a').removeClass('select');
+
+document.getElementById('div1').style.display='block';
+document.getElementById('div2').style.display='none';
+document.getElementById('div3').style.display='none';
+document.getElementById('div4').style.display='none';
+}
+function fun2(){
+$('#tab1 a').removeClass('select');
+$('#tab2 a').addClass('select');
+$('#tab3 a').removeClass('select');
+$('#tab4 a').removeClass('select');
+
+document.getElementById('div1').style.display='none';
+document.getElementById('div2').style.display='block';
+document.getElementById('div3').style.display='none';
+document.getElementById('div4').style.display='none';
+}
+
+function fun3(){
+$('#tab1 a').removeClass('select');
+$('#tab2 a').removeClass('select');
+$('#tab3 a').addClass('select');
+$('#tab4 a').removeClass('select');
+
+document.getElementById('div1').style.display='none';
+document.getElementById('div2').style.display='none';
+document.getElementById('div3').style.display='block';
+document.getElementById('div4').style.display='none';
+}
+
+function fun4(){
+$('#tab1 a').removeClass('select');
+$('#tab2 a').removeClass('select');
+$('#tab3 a').removeClass('select');
+$('#tab4 a').addClass('select');
+
+
+document.getElementById('div1').style.display='none';
+document.getElementById('div2').style.display='none';
+document.getElementById('div3').style.display='none';
+document.getElementById('div4').style.display='block';
+
+}
+
+window.onload = function() {
+	document.getElementById('tab1').onclick=fun1;
+	document.getElementById('tab2').onclick=fun2;		
+	document.getElementById('tab3').onclick=fun3;
+	document.getElementById('tab4').onclick=fun4;
+	
+	document.getElementById('div1').style.display='block';
+	document.getElementById('div2').style.display='none';	
+	document.getElementById('div3').style.display='none';
+	document.getElementById('div4').style.display='none';
+}
+</script>
+
+
+<link rel="stylesheet" href="css/smk-accordion.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body id="top">
+
+
+
+<div class="pop-up">
+	<div class="pop-upHdr">
+		<h3>FindMyPrivateTutor.com</h3>
+		<a href="#" class="pop-up-close"><img src="images/pop-up_close.png"></a>
+	</div>
+	<div class="pop-up-inr">
+		<h4>Welcome!</h4>
+		<h5>Please tell us how would you like to 
+enter the website</h5>
+
+		<img src="images/pop-up_img.jpg" class="pop-up_img">
+
+	</div>
+</div>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script>
+$(function() {
+  $('a.bk_top[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript" src="js/smk-accordion.js"></script> 
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	
+	$(".accordion_example1").smk_Accordion({
+		showIcon: true, //boolean
+		animation: true, //boolean
+		closeAble: false, //boolean
+		slideSpeed: 200 //integer, miliseconds
+	});
+
+	$(".accordion_example2").smk_Accordion({
+		showIcon: true, //boolean
+		animation: true, //boolean
+		closeAble: true, //boolean
+		slideSpeed: 200 //integer, miliseconds
+	});
+
+	$(".accordion_example3").smk_Accordion({
+		showIcon: false, //boolean
+		animation: true, //boolean
+		closeAble: false, //boolean
+		slideSpeed: 200 //integer, miliseconds
+	});
+
+	$(".accordion_example4").smk_Accordion({closeAble: true});
+
+	
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

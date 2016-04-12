@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Tutor</title>
+
+<script type="text/javascript">
+document.createElement("nav" );
+document.createElement("section" );
+document.createElement("footer" );
+</script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+<link href="css/owl.carousel.css" rel="stylesheet">
+
+
+<style>
+        .black_overlay{
+            display: none;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+           	z-index:999999;
+            -moz-opacity: 0.5;
+            opacity:.80;
+            filter: alpha(opacity=80);
+        }
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 25%;          
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body id="top">
+	<div class="main_wrapper">
+		
+		<header class="hm_header">
+			<div class="container">
+				<div class="hm_logo">
+					<a href="#"><img src="images/hm_logo.png"></a>
+				</div>
+				<div class="hm_hdr_right">
+					<img src="images/hm_hdr_profile_pic.png">
+					<div class="hm_hdr_rightInr">
+						<h4>Welcome back </h4>
+						<h5> Mr. Lara Croft </h5>
+						<ul>
+							<li><a href="#">My Profile</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="navigation_sec">
+			<nav class="main_navi">
+				<div class="container">
+					<ul class="hm_nav desk_nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Online Tutors</a></li>
+						<li><a href="#">For Students </a></li>
+						<li><a href="#">For Teachers</a>
+							<ul>
+								<div class="container">
+									<li><a class="active" href="#">Find a Tutor</a></li>
+									<li><a href="#">How our service works?</a></li>
+									<li><a href="#">Browse all Subjects</a></li>
+									<li><a href="#">Post a study requirement</a></li>
+									<li><a href="#">Online tutors</a></li>
+									<li><a href="#">Register as a tutees</a></li>
+								</div>							
+							</ul>
+						</li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">FAQs / Help</a></li>					
+					</ul>
+					
+					<ul class="hm_sm">
+						<li><a href="#"><img src="images/hm_sm1.png" alt="" border="0" onmouseover="this.src='images/hm_sm1H.png'" onmouseout="this.src='images/hm_sm1.png'" /></a></li>
+						<li><a href="#"><img src="images/hm_sm2.png" alt="" border="0" onmouseover="this.src='images/hm_sm2H.png'" onmouseout="this.src='images/hm_sm2.png'" /></a></li>					
+						<li><a href="#"><img src="images/hm_sm4.png" alt="" border="0" onmouseover="this.src='images/hm_sm4H.png'" onmouseout="this.src='images/hm_sm4.png'" /></a></li>
+						<li><a href="#"><img src="images/hm_sm5.png" alt="" border="0" onmouseover="this.src='images/hm_sm5H.png'" onmouseout="this.src='images/hm_sm5.png'" /></a></li>
+						<li><a href="#"><img src="images/hm_sm6.png" alt="" border="0" onmouseover="this.src='images/hm_smH6.png'" onmouseout="this.src='images/hm_sm6.png'" /></a></li>					
+					</ul>
+					
+				</div>
+			</nav>
+			<nav class="main_navi mob_nav">
+				<div class="container">
+					<span id="open" class="menumobile"><img src="images/munu_mobil.png" alt="" class="menu_tgl" /></span>
+					<ul class="hm_nav" id="hide">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Online Tutors</a></li>
+						<li><a href="#">For Students </a></li>
+						<li><a href="#">For Teachers</a>
+							<ul>
+								<li><a href="#">Find a Tutor</a></li>
+								<li><a href="#">How our service works?</a></li>
+								<li><a href="#">Browse all Subjects</a></li>
+								<li><a href="#">Post a study requirement</a></li>
+								<li><a href="#">Online tutors</a></li>
+								<li><a href="#">Register as a tutees</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">FAQs / Help</a></li>					
+					</ul>
+				</div>
+			</nav>
+		</div>
+		
+		<section class="banner_sec">
+			<img src="images/hm_banner.jpg">
+			<div class="banner_overlay">				
+				<div class="hmbnr_frm">
+					<h1> Find your private tutor is now easy</h1>
+					<p>Take trial lessons, go through blogs and DIY projects</p>
+					<div class="hmbnr_frmInr">
+						<ul>
+							<li>
+								<label>Enter a subject</label>
+								<input type="text" placeholder="eg. 'Algebra'" />
+							</li>
+							<li>
+								<label>Enter a subject</label>
+								<div class="hm_br_select">
+								   <select>
+								      <option>Entry</option>
+								      <option>The second option</option>
+								   </select>
+								</div>
+							</li>
+							<li>
+								<label>Enter a subject</label>
+								<div class="hm_br_select">
+								   <select>
+								      <option>Online</option>
+								      <option>The second option</option>
+								   </select>
+								</div>
+							</li>
+							<li>
+								<input type="submit" value="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<a href="#cont_sec" class="bk_top hm_bnr_aro">SCROLL DOWN</a>
+		</section>
+		 <div id="fade" class="black_overlay"></div>
+		<div class="hm_sidebtns">			
+		<div class="register">
+			<div class="register_txt">register as a tutor</div>
+		</div>
+		</div>
+			
+			<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+				<div class="hm_sidebtns1">
+					<div class="feed_back">
+						<div class="register_txt1">give us feedback</div>
+					</div>
+				</div>
+				</a>
+			
+			<div id="light" class="white_content">
+				 <div class="pop-up fdbk_pop">
+	<div class="pop-upHdr">
+		<h3><img src="images/fdbk_icon.png"></h3>
+		<a class="pop-up-close" href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img src="images/pop-up_close.png"></a>
+	</div>
+	<div class="pop-up-inr">
+		<h4>Your opinion matters! Tell us <br/>
+what you think about <span>Find My Private Tutor.com</span> </h4>
+
+		<ul class="fdbk_sm_list">
+			<li><a href="#"><img src="images/fcbk_invite.png"></a></li>
+			<li><a href="#"><img src="images/glus_invite.png"></a></li>
+		</ul>
+		
+		<div class="fdbk_form">
+			<form>
+				<input type="text" placeholder="your name*" />
+				<input type="text" placeholder="your email*"  />
+				<textarea placeholder="type your message.."></textarea >
+				<ul class="fdbk_formBtn">
+					<li>Thank You!</li>
+					<li><input type="submit" value="Submit" /></li>
+				</ul>
+			</form>
+		</div>
+
+		
+	</div>
+</div>
+        	</div>
+       
+		
+		
+		
+		
+		<div class="hm_body" id="cont_sec">
+			<div class="container">
+				
+				<div class="hm_subject_sec">
+					<div class="hm_subject_secHdr"><h3>Browse online tutors by subject</h3></div>
+					
+					<div class="hm_subjectInr">
+						
+						<div class="hm_subject_Col">
+							<h5>Music Tutors</h5>											
+							<ul>
+								<li><a href="#">Guitar lessons</a></li>
+								<li><a href="#">Piano lessons</a></li>
+								<li><a href="#">Violin lessons</a></li>
+								<li><a href="#">Flute lessons</a></li>
+								<li><a href="#">Accordion lessons</a></li>
+								<li><a href="#">Singing lessons</a></li>
+							</ul>							
+						</div>
+						<div class="hm_subject_Col">
+							<h5>Art Tutors</h5>							
+							<ul>
+								<li><a href="#">Painting lessons</a></li>
+								<li><a href="#">Pottery lessons</a></li>
+								<li><a href="#">Dance lessons</a></li>
+								<li><a href="#">Acting lessons</a></li>
+								<li><a href="#">Filming lessons</a></li>
+							</ul>							
+						</div>
+						<div class="hm_subject_Col">
+							<h5>Language Tutors</h5>							
+							<ul>
+								<li><a href="#">Spanish lessons</a></li>
+								<li><a href="#">English lessons</a></li>
+								<li><a href="#">French lessons</a></li>
+								<li><a href="#">German lessons</a></li>
+								<li><a href="#">Arabic lessons</a></li>
+								<li><a href="#">Latin lessons</a></li>
+							</ul>							
+						</div>
+						<div class="hm_subject_Col">
+							<h5>IT Tutors</h5>							
+							<ul>
+								<li><a href="#">HTML</a></li>
+								<li><a href="#">CSS</a></li>
+								<li><a href="#">Java</a></li>
+								<li><a href="#">C++</a></li>
+								<li><a href="#">Joomla</a></li>
+								<li><a href="#">Wordpress</a></li>
+							</ul>							
+						</div>
+						<div class="hm_subject_Col">
+							<h5>Math Tutors</h5>							
+							<ul>
+								<li><a href="#">Algebra lessons</a></li>
+								<li><a href="#">Geometry lessons</a></li>
+								<li><a href="#">Calculus lessons</a></li>
+								<li><a href="#">Statistics lessons</a></li>
+								<li><a href="#">Trigonometry lessons</a></li>
+							</ul>							
+						</div>
+						
+						<div class="hm_subject_Col">
+							<h5>History Tutors</h5>							
+							<ul>
+								<li><a href="#">European lessons</a></li>
+								<li><a href="#">Renaissance lessons</a></li>
+								<li><a href="#">Asian lessons</a></li>
+								<li><a href="#">Middle Ages lessons</a></li>
+								<li><a href="#">WW2 lessons</a></li>
+								<li><a href="#">Greek lessons</a></li>
+							</ul>							
+						</div>
+						
+						<div class="hm_subject_ColBtn">
+							<a href="#">View all Subjects</a>
+						</div>
+						
+					</div>					
+				</div>			
+				
+				
+				<div class="hm_testi_sec">
+					<h3>What our members say about us</h3>					
+					<div id="owl-demo" class="owl-carousel">
+			                   <div class="item">
+			                   	<div class="hm_testi_secInr">
+									<div class="hm_testiBx">
+										
+				                   		<div class="hm_testiBxRow left">
+											<img src="images/hm_testi_pic.png" class="hm_testi_pic">
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			incididunt ut labore et dolore magna aliqua"</p>
+			<p><span>Lara Croft - Student at CALLTECH</span></p>
+										</div>
+										
+										<div class="hm_testiBxRow right">
+											<img src="images/hm_testi_pic.png" class="hm_testi_pic">
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			incididunt ut labore et dolore magna aliqua"</p>
+			<p><span>Lara Croft - Student at CALLTECH</span></p>
+									    </div>
+				                   </div>			                   
+				               </div>							
+							</div>
+							
+							<div class="item">
+			                   	<div class="hm_testi_secInr">
+									<div class="hm_testiBx">
+										
+				                   		<div class="hm_testiBxRow left">
+											<img src="images/hm_testi_pic.png" class="hm_testi_pic">
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			incididunt ut labore et dolore magna aliqua"</p>
+			<p><span>Lara Croft - Student at CALLTECH</span></p>
+										</div>
+										
+										<div class="hm_testiBxRow right">
+											<img src="images/hm_testi_pic.png" class="hm_testi_pic">
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			incididunt ut labore et dolore magna aliqua"</p>
+			<p><span>Lara Croft - Student at CALLTECH</span></p>
+									    </div>
+				                   </div>			                   
+				               </div>							
+							</div>
+							
+							<div class="item">
+			                   	<div class="hm_testi_secInr">
+									<div class="hm_testiBx">
+										
+				                   		<div class="hm_testiBxRow left">
+											<img src="images/hm_testi_pic.png" class="hm_testi_pic">
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			incididunt ut labore et dolore magna aliqua"</p>
+			<p><span>Lara Croft - Student at CALLTECH</span></p>
+										</div>
+										
+										<div class="hm_testiBxRow right">
+											<img src="images/hm_testi_pic.png" class="hm_testi_pic">
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			incididunt ut labore et dolore magna aliqua"</p>
+			<p><span>Lara Croft - Student at CALLTECH</span></p>
+									    </div>
+				                   </div>			                   
+				               </div>							
+							</div>
+						
+					</div>
+				</div>
+				
+				
+				<div class="hm_subject_sec">
+					<div class="hm_subject_secHdr"><h3>Browse jobs by categories</h3>
+						<div class="cat_srch_hm">
+							<input type="text" placeholder="eg. 'Maths'" />
+							<input type="submit" value="" />
+						</div>
+					</div>
+					
+					<div class="hm_subjectInr">
+						
+						<div class="hm_subject_Col">
+							<h5>Music Jobs</h5>											
+							<ul>
+								<li><a href="#">Guitar</a></li>
+								<li><a href="#">Piano</a></li>
+								<li><a href="#">Violin</a></li>
+								<li><a href="#">Singing</a></li>
+							</ul>							
+						</div>
+						<div class="hm_subject_Col">
+							<h5>Art Jobs</h5>							
+							<ul>
+								<li><a href="#">Painting</a></li>
+								<li><a href="#">Dance</a></li>
+								<li><a href="#">Acting</a></li>
+								<li><a href="#">Film</a></li>
+							</ul>							
+						</div>
+						<div class="hm_subject_Col">
+							<h5>History Jobs</h5>							
+							<ul>
+								<li><a href="#">Europe</a></li>
+								<li><a href="#">Renaissance</a></li>
+								<li><a href="#">Asia</a></li>
+								<li><a href="#">Middle Ages</a></li>
+							</ul>							
+						</div>
+						<div class="hm_subject_Col">
+							<h5>IT Jobs</h5>							
+							<ul>
+								<li><a href="#">HTML</a></li>
+								<li><a href="#">CSS</a></li>
+								<li><a href="#">Java</a></li>
+								<li><a href="#">C++</a></li>
+							</ul>							
+						</div>
+						<div class="hm_subject_Col">
+							<h5>Math Jobs</h5>							
+							<ul>
+								<li><a href="#">Algebra</a></li>
+								<li><a href="#">Geometry</a></li>
+								<li><a href="#">Calculus</a></li>
+								<li><a href="#">Statistics</a></li>
+							</ul>							
+						</div>
+						
+						<div class="hm_subject_Col">
+							<h5>Languages Jobs</h5>							
+							<ul>
+								<li><a href="#">Spanish</a></li>
+								<li><a href="#">English</a></li>
+								<li><a href="#">Arabic</a></li>
+								<li><a href="#">Latin</a></li>
+							</ul>							
+						</div>
+						
+						<div class="hm_subject_ColBtn">
+							<a href="#">View all Jobs</a>
+						</div>
+						
+					</div>					
+				</div>
+				
+				<div class="service_sec">
+					<h3>Our Services</h3>					
+					<div class="service_secInr">
+						
+						<div class="serviceBx hm_icon1">
+							<a href="#">Be a Teacher</a>
+						</div>
+						<div class="serviceBx hm_icon2">
+							<a href="#">Tutoring Jobs</a>
+						</div>
+						<div class="serviceBx hm_icon3">
+							<a href="#">Summer Trainings</a>
+						</div>
+						<div class="serviceBx hm_icon4">
+							<a href="#">Online Tutors</a>
+						</div>
+						
+						<div class="serviceBx hm_icon5">
+							<a href="#">Academic</a>
+						</div>
+						<div class="serviceBx hm_icon6">
+							<a href="#">Ongoing Trainings</a>
+						</div>
+						<div class="serviceBx hm_icon7">
+							<a href="#">Assignment Help</a>
+						</div>
+						<div class="serviceBx hm_icon8">
+							<a href="#">Music Lessons</a>
+						</div>
+						
+						<div class="serviceBx hm_icon9">
+							<a href="#">Web Design Jobs</a>
+						</div>
+						<div class="serviceBx hm_icon10">
+							<a href="#">IT Courses</a>
+						</div>
+						<div class="serviceBx hm_icon11">
+							<a href="#">Languages</a>
+						</div>
+						<div class="serviceBx hm_icon12">
+							<a href="#">Blog</a>
+						</div>				
+						
+					</div>					
+				</div>
+				
+				
+				<div class="hm_find_sec">
+					<div class="hm_subject_secHdr"><h3>Browse online tutors by subject</h3></div>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+est laborum.</p>
+
+
+				<div class="cont_listSec">
+				<h5>Why are we different?</h5>
+				<ul class="cont_list">
+					<li><span>Lorem ipsum dolor </span> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+					<li><span>Lorem ipsum dolor </span> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+					<li><span>Lorem ipsum dolor </span> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+					<li><span>Lorem ipsum dolor </span> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+				</ul>
+				</div>
+				
+				<h5>Register as a Tutor!</h5>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+				<div class="btm_regi_btn">
+					<a href="#">Register today</a>
+				</div>
+				
+				
+
+				</div>
+				
+				
+				
+				
+			</div>
+		</div>		
+		
+		
+		<div class="footer">
+			<div class="nwsletter">
+				<div class="container">
+					<div class="nwsletterLeft">
+						<img src="images/nwslatter_icon.png">
+						<div class="nwsletterLeftInr">
+							<span>SUBSCRIBE TO OUR</span>NEWSLETTER
+						</div>
+					</div>
+					<div class="nwsletterRight">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+					</div>
+				</div>
+			</div>
+			<div class="black_ftr">
+				<div class="container">
+					<div class="black_ftrInr">
+					<a href="#top" class="bk_top"><img src="images/bk_to_top.png"></a>
+					<div class="footerColLeft">
+						
+						<div class="ftr_col">
+							<h3>Company</h3>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">FAQs</a></li>
+								<li><a href="#">Onine Tutoring</a></li>
+								<li><a href="#">For Students</a></li>
+								<li><a href="#">For Tutors</a></li>
+								<li><a href="#">Security</a></li>
+								<li><a href="#">Applications</a></li>								
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+						
+						<div class="ftr_col">
+							<h3>Subjects</h3>
+							<ul>
+								<li><a href="#">Economy</a></li>
+								<li><a href="#">MySQL</a></li>
+								<li><a href="#">Java</a></li>
+								<li><a href="#">Social Studies</a></li>
+								<li><a href="#">Law</a></li>
+								<li><a href="#">Academic</a></li>
+								<li><a href="#">HTML</a></li>								
+								<li><a href="#" class="ftr_blt_link">Browse all Subjects</a></li>
+							</ul>
+						</div>
+						
+						<div class="ftr_col">
+							<h3>Locations</h3>
+							<ul>
+								<li><a href="#">Bangalore</a></li>
+								<li><a href="#">Chennai</a></li>
+								<li><a href="#">Kolkata</a></li>
+								<li><a href="#">Mumbai</a></li>
+								<li><a href="#">New Delhi</a></li>
+								<li><a href="#">Panchkula</a></li>
+								<li><a href="#">Secundrabad</a></li>								
+								<li><a href="#" class="ftr_blt_link">View all Locations</a></li>
+							</ul>
+						</div>
+						
+					</div>
+					
+					<div class="footerColRight">
+						
+						<div class="ftr_col">
+							<h3>Tutoring</h3>
+							<ul>
+								<li><a href="#">Tutor Training</a></li>
+								<li><a href="#">Job Offers</a></li>
+								<li><a href="#">Search for Students</a></li>
+								<li><a href="#">Online Tutoring</a></li>
+								<li><a href="#">Premium Membership</a></li>
+							</ul>
+						</div>
+						
+						<div class="ftr_col">
+							<h3>Connect with Us</h3>
+							<ul class="sm">
+								<li><a href="#"> <img src="images/sm1.png"> Facebook</a></li>
+								<li><a href="#"> <img src="images/sm2.png"> Twitter</a></li>
+								<li><a href="#"> <img src="images/sm3.png"> Linkedin</a></li>
+								<li><a href="#"> <img src="images/sm4.png"> Youtube</a></li>
+								<li><a href="#"> <img src="images/sm5.png"> Google Plus</a></li>
+							</ul>
+						</div>
+						
+						<div class="app_stor">
+							<ul>
+								<li><a href="#"><img src="images/app_stor.png"></a></li>
+								<li><a href="#"><img src="images/app_stor2.png"></a></li>
+							</ul>
+						</div>
+												
+					</div>
+					</div>
+					
+				</div>
+			</div>
+		
+			<div class="ftr_bottom">
+				<div class="container">
+					<p class="copy">Copyright &copy;  2015 Findmyprivatetutor.com / All Rights Reserved</p>
+					<ul>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Intellectual Property Rights</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('#open').click(function(){
+$('#hide').slideToggle();
+});
+});
+</script>
+<script src="js/jquery.accordion.source.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+		// <![CDATA[
+			
+		$(document).ready(function () {
+			$('ul').accordion();
+		});
+				
+		// ]]>
+	</script>
+	
+	
+<script>
+$(function() {
+  $('a.bk_top[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+<script src="js/owl.carousel.js"></script>
+<script>
+$(document).ready(function() {
+  $("#owl-demo").owlCarousel({
+
+  navigation : true,
+  slideSpeed : 300,
+  paginationSpeed : 400,
+  singleItem : true
+
+  // "singleItem:true" is a shortcut for:
+  // items : 1, 
+  // itemsDesktop : false,
+  // itemsDesktopSmall : false,
+  // itemsTablet: false,
+  // itemsMobile : false
+
+  });
+});
+</script>
+
+
+</body>
+</html>

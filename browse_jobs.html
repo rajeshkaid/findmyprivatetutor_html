@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Tutor</title>
+
+<script type="text/javascript">
+document.createElement("nav" );
+document.createElement("section" );
+document.createElement("footer" );
+</script>
+
+
+<script type="text/javascript">
+function fun1(){
+$('#tab1 a').addClass('select');
+$('#tab2 a').removeClass('select');
+$('#tab3 a').removeClass('select');
+$('#tab4 a').removeClass('select');
+
+document.getElementById('div1').style.display='block';
+document.getElementById('div2').style.display='none';
+document.getElementById('div3').style.display='none';
+document.getElementById('div4').style.display='none';
+}
+function fun2(){
+$('#tab1 a').removeClass('select');
+$('#tab2 a').addClass('select');
+$('#tab3 a').removeClass('select');
+$('#tab4 a').removeClass('select');
+
+document.getElementById('div1').style.display='none';
+document.getElementById('div2').style.display='block';
+document.getElementById('div3').style.display='none';
+document.getElementById('div4').style.display='none';
+}
+
+function fun3(){
+$('#tab1 a').removeClass('select');
+$('#tab2 a').removeClass('select');
+$('#tab3 a').addClass('select');
+$('#tab4 a').removeClass('select');
+
+document.getElementById('div1').style.display='none';
+document.getElementById('div2').style.display='none';
+document.getElementById('div3').style.display='block';
+document.getElementById('div4').style.display='none';
+}
+
+function fun4(){
+$('#tab1 a').removeClass('select');
+$('#tab2 a').removeClass('select');
+$('#tab3 a').removeClass('select');
+$('#tab4 a').addClass('select');
+
+
+document.getElementById('div1').style.display='none';
+document.getElementById('div2').style.display='none';
+document.getElementById('div3').style.display='none';
+document.getElementById('div4').style.display='block';
+
+}
+
+window.onload = function() {
+	document.getElementById('tab1').onclick=fun1;
+	document.getElementById('tab2').onclick=fun2;		
+	document.getElementById('tab3').onclick=fun3;
+	document.getElementById('tab4').onclick=fun4;
+	
+	document.getElementById('div1').style.display='block';
+	document.getElementById('div2').style.display='none';	
+	document.getElementById('div3').style.display='none';
+	document.getElementById('div4').style.display='none';
+}
+</script>
+
+
+<link rel="stylesheet" href="css/smk-accordion.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body id="top">
+	<div class="main_wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" alt="" /></a>
+				</div>
+				<div class="srch">
+					<form method="" action="">
+						<div class="srch_sec">
+							<input type="text" placeholder="Your Location" />
+						</div>
+						<div class="srch_job">
+							<input type="text" placeholder="Search Jobs.." />
+						</div>
+						<div class="srch_icon">						
+							<input type="submit" value="" />
+						</div>
+					</form>
+				</div>
+				<div class="ttr_avtar">
+					<div class="avtr_img">
+						<a href="#"><img src="images/student_pic.png" alt="" /></a>
+					</div>
+					<div class="drop_mnu">
+						<a href="#"><img src="images/drop_img.png" alt="" /></a>
+					</div>
+					<div class="drop_menu">
+						<div class="bg_img">
+							<img src="images/menu_up.png" alt="" />
+						</div>
+						<ul>
+							<li class="active"><a href="#">Sign In</a></li>
+							<li><a href="#">Dashboard</a></li>
+							<li><a href="#">Register as Tutor</a></li>
+							<li><a href="#">Register as Student</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="mid_body tutor_stusrch_sec">
+			<div class="container">
+				<div class="studnt_top_txt">
+					<h5>Lorem ipsum dolor sit amet</h5>
+					<p>consectetur adipiscing elit, sed do eiusmod tempor<br>
+incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="student_bot_sec">
+					<div class="student_bot_secprt">
+						<ul class="tab_list tab_list2">
+							<li id="tab1"><a href="#url" class="select">FOR TUTORS</a></li>
+						</ul>
+						<div class="tab_contentstu" id="div1">
+							<div class="stusrch_form_sec">
+								<form method="post" action="">
+									<div class="stu_drop">
+										<div class="styled-select">
+										   <select>
+										      <option>Category</option>
+										      <option>Category</option>
+										   </select>
+										</div>
+									</div>
+									<div class="stu_drop_srch">
+										<div class="styled-select">
+										   <select>
+										      <option>Subject</option>
+										      <option>Subject</option>
+										   </select>
+										</div>
+									</div>
+									<div class="stu_drop">
+										<div class="styled-select">
+										   <select>
+										      <option>Tutors</option>
+										      <option>Tutors</option>
+										   </select>
+										</div>
+									</div>
+									<div class="stu_drop">
+										<div class="styled-select">
+										   <select>
+										      <option>Tutors</option>
+										      <option>Tutors</option>
+										   </select>
+										</div>
+									</div>
+									<div class="stu_drop_srch">
+										<input type="text" placeholder="Location"/>
+									</div>
+									<div class="stu_btn_serch">
+										<p>250 results displayed for your search on <span>Web Design</span>
+										<input type="submit" value="search"/> </p>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="browse_tbl_sec">
+					<div class="browse_tbl_Responsive">
+					<table cellpadding="0" cellspacing="0">
+						<tr>
+							<th>Title</th>
+							<th>Category</th>
+							<th>Subject</th>
+							<th>Price /  h</th>
+							<th>Details</th>
+							<th>Date</th>
+							<th>View</th>
+						</tr>
+						<tr>
+							<td>Web Design teacher Wanted</td>
+							<td><a href="#" class="cat">Web Design</a></td>
+							<td> Photoshop</td>
+							<td>100 $</td>
+							<td>Need teacher to...</td>
+							<td>14.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr class="high_light">
+							<td>Web Design teacher Wanted</td>
+							<td><a href="#" class="cat">Web Design</a></td>
+							<td> Photoshop</td>
+							<td>100 $</td>
+							<td>Need teacher to...</td>
+							<td>14.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr>
+							<td>Guitar lessons needed for..</td>
+							<td><a href="#" class="cat">Music </a></td>
+							<td> Guitar</td>
+							<td>60 $</td>
+							<td>Searching for tutor..</td>
+							<td>12.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr class="high_light">
+							<td>Searching for Mathematics WIzard </td>
+							<td><a href="#" class="cat">Mathematics</a></td>
+							<td>Algebra </td>
+							<td>200 $</td>
+							<td> Looking for a .. </td>
+							<td>11.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr>
+							<td>Web Design teacher Wanted</td>
+							<td><a href="#" class="cat">Web Design</a></td>
+							<td> Photoshop</td>
+							<td>100 $</td>
+							<td>Need teacher to...</td>
+							<td>14.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr class="high_light">
+							<td>Web Design teacher Wanted</td>
+							<td><a href="#" class="cat">Web Design</a></td>
+							<td> Photoshop</td>
+							<td>100 $</td>
+							<td>Need teacher to...</td>
+							<td>14.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr>
+							<td>Guitar lessons needed for..</td>
+							<td><a href="#" class="cat">Music </a></td>
+							<td> Guitar</td>
+							<td>60 $</td>
+							<td>Searching for tutor..</td>
+							<td>12.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr class="high_light">
+							<td>Searching for Mathematics WIzard </td>
+							<td><a href="#" class="cat">Mathematics</a></td>
+							<td>Algebra </td>
+							<td>200 $</td>
+							<td> Looking for a .. </td>
+							<td>11.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr>
+							<td>Web Design teacher Wanted</td>
+							<td><a href="#" class="cat">Web Design</a></td>
+							<td> Photoshop</td>
+							<td>100 $</td>
+							<td>Need teacher to...</td>
+							<td>14.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr class="high_light">
+							<td>Web Design teacher Wanted</td>
+							<td><a href="#" class="cat">Web Design</a></td>
+							<td> Photoshop</td>
+							<td>100 $</td>
+							<td>Need teacher to...</td>
+							<td>14.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr>
+							<td>Guitar lessons needed for..</td>
+							<td><a href="#" class="cat">Music </a></td>
+							<td> Guitar</td>
+							<td>60 $</td>
+							<td>Searching for tutor..</td>
+							<td>12.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr class="high_light">
+							<td>Searching for Mathematics WIzard </td>
+							<td><a href="#" class="cat">Mathematics</a></td>
+							<td>Algebra </td>
+							<td>200 $</td>
+							<td> Looking for a .. </td>
+							<td>11.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr>
+							<td>Web Design teacher Wanted</td>
+							<td><a href="#" class="cat">Web Design</a></td>
+							<td> Photoshop</td>
+							<td>100 $</td>
+							<td>Need teacher to...</td>
+							<td>14.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr class="high_light">
+							<td>Web Design teacher Wanted</td>
+							<td><a href="#" class="cat">Web Design</a></td>
+							<td> Photoshop</td>
+							<td>100 $</td>
+							<td>Need teacher to...</td>
+							<td>14.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr>
+							<td>Guitar lessons needed for..</td>
+							<td><a href="#" class="cat">Music </a></td>
+							<td> Guitar</td>
+							<td>60 $</td>
+							<td>Searching for tutor..</td>
+							<td>12.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>
+						
+						<tr class="high_light">
+							<td>Searching for Mathematics WIzard </td>
+							<td><a href="#" class="cat">Mathematics</a></td>
+							<td>Algebra </td>
+							<td>200 $</td>
+							<td> Looking for a .. </td>
+							<td>11.09.2015</td>
+							<td><a href="#" class="view_btn"></a></td>
+						</tr>						
+					</table>
+					</div>
+					<div class="pagination_sec">
+						<ul>
+							<li><a href="#"> < </a></li>
+							<li><a href="#" class="active"> 1 </a></li>
+							<li><a href="#"> 2 </a></li>
+							<li><a href="#"> 3 </a></li>
+							<li><a href="#"> 4 </a></li>
+							<li><a href="#"> 5 </a></li>
+							<li><a href="#"> 6 </a></li>
+							<li><a href="#"> 7 </a></li>
+							<li><a href="#"> > </a></li>
+						</ul>
+					</div>				
+				</div>
+				
+				<div class="browse_tblBtm_content">
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+					<p>You may see any jobs posted on <span>findmyprivatetutor.com</span> at any given time but only registered users may be able to apply. <a href="#">Register</a> today to see more jobs.</p> 
+				</div>
+						
+			
+			</div>
+		</section>
+		<div class="footer">
+			<div class="nwsletter">
+				<div class="container">
+					<div class="nwsletterLeft">
+						<img src="images/nwslatter_icon.png">
+						<div class="nwsletterLeftInr">
+							<span>SUBSCRIBE TO OUR</span>NEWSLETTER
+						</div>
+					</div>
+					<div class="nwsletterRight">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+					</div>
+				</div>
+			</div>
+			<div class="black_ftr">
+				<div class="container">
+					<div class="black_ftrInr">
+					<a href="#top" class="bk_top"><img src="images/bk_to_top.png"></a>
+					<div class="footerColLeft">
+						
+						<div class="ftr_col">
+							<h3>Company</h3>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">FAQs</a></li>
+								<li><a href="#">Onine Tutoring</a></li>
+								<li><a href="#">For Students</a></li>
+								<li><a href="#">For Tutors</a></li>
+								<li><a href="#">Security</a></li>
+								<li><a href="#">Applications</a></li>								
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+						
+						<div class="ftr_col">
+							<h3>Subjects</h3>
+							<ul>
+								<li><a href="#">Economy</a></li>
+								<li><a href="#">MySQL</a></li>
+								<li><a href="#">Java</a></li>
+								<li><a href="#">Social Studies</a></li>
+								<li><a href="#">Law</a></li>
+								<li><a href="#">Academic</a></li>
+								<li><a href="#">HTML</a></li>								
+								<li><a href="#" class="ftr_blt_link">Browse all Subjects</a></li>
+							</ul>
+						</div>
+						
+						<div class="ftr_col">
+							<h3>Locations</h3>
+							<ul>
+								<li><a href="#">Bangalore</a></li>
+								<li><a href="#">Chennai</a></li>
+								<li><a href="#">Kolkata</a></li>
+								<li><a href="#">Mumbai</a></li>
+								<li><a href="#">New Delhi</a></li>
+								<li><a href="#">Panchkula</a></li>
+								<li><a href="#">Secundrabad</a></li>								
+								<li><a href="#" class="ftr_blt_link">View all Locations</a></li>
+							</ul>
+						</div>
+						
+					</div>
+					
+					<div class="footerColRight">
+						
+						<div class="ftr_col">
+							<h3>Tutoring</h3>
+							<ul>
+								<li><a href="#">Tutor Training</a></li>
+								<li><a href="#">Job Offers</a></li>
+								<li><a href="#">Search for Students</a></li>
+								<li><a href="#">Online Tutoring</a></li>
+								<li><a href="#">Premium Membership</a></li>
+							</ul>
+						</div>
+						
+						<div class="ftr_col">
+							<h3>Connect with Us</h3>
+							<ul class="sm">
+								<li><a href="#"> <img src="images/sm1.png"> Facebook</a></li>
+								<li><a href="#"> <img src="images/sm2.png"> Twitter</a></li>
+								<li><a href="#"> <img src="images/sm3.png"> Linkedin</a></li>
+								<li><a href="#"> <img src="images/sm4.png"> Youtube</a></li>
+								<li><a href="#"> <img src="images/sm5.png"> Google Plus</a></li>
+							</ul>
+						</div>
+						
+						<div class="app_stor">
+							<ul>
+								<li><a href="#"><img src="images/app_stor.png"></a></li>
+								<li><a href="#"><img src="images/app_stor2.png"></a></li>
+							</ul>
+						</div>
+												
+					</div>
+					</div>
+					
+				</div>
+			</div>
+		
+			<div class="ftr_bottom">
+				<div class="container">
+					<p class="copy">Copyright &copy;  2015 Findmyprivatetutor.com / All Rights Reserved</p>
+					<ul>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Intellectual Property Rights</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script>
+$(function() {
+  $('a.bk_top[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript" src="js/smk-accordion.js"></script> 
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	
+	$(".accordion_example1").smk_Accordion({
+		showIcon: true, //boolean
+		animation: true, //boolean
+		closeAble: false, //boolean
+		slideSpeed: 200 //integer, miliseconds
+	});
+
+	$(".accordion_example2").smk_Accordion({
+		showIcon: true, //boolean
+		animation: true, //boolean
+		closeAble: true, //boolean
+		slideSpeed: 200 //integer, miliseconds
+	});
+
+	$(".accordion_example3").smk_Accordion({
+		showIcon: false, //boolean
+		animation: true, //boolean
+		closeAble: false, //boolean
+		slideSpeed: 200 //integer, miliseconds
+	});
+
+	$(".accordion_example4").smk_Accordion({closeAble: true});
+
+	
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

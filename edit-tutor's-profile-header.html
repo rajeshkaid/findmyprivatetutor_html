@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Tutor</title>
+
+<script type="text/javascript">
+document.createElement("nav" );
+document.createElement("section" );
+document.createElement("footer" );
+</script>
+
+
+<script type="text/javascript">
+function fun1(){
+$('#tab1 a').addClass('select');
+$('#tab2 a').removeClass('select');
+$('#tab3 a').removeClass('select');
+$('#tab4 a').removeClass('select');
+
+document.getElementById('div1').style.display='block';
+document.getElementById('div2').style.display='none';
+document.getElementById('div3').style.display='none';
+document.getElementById('div4').style.display='none';
+}
+function fun2(){
+$('#tab1 a').removeClass('select');
+$('#tab2 a').addClass('select');
+$('#tab3 a').removeClass('select');
+$('#tab4 a').removeClass('select');
+
+document.getElementById('div1').style.display='none';
+document.getElementById('div2').style.display='block';
+document.getElementById('div3').style.display='none';
+document.getElementById('div4').style.display='none';
+}
+
+function fun3(){
+$('#tab1 a').removeClass('select');
+$('#tab2 a').removeClass('select');
+$('#tab3 a').addClass('select');
+$('#tab4 a').removeClass('select');
+
+document.getElementById('div1').style.display='none';
+document.getElementById('div2').style.display='none';
+document.getElementById('div3').style.display='block';
+document.getElementById('div4').style.display='none';
+}
+
+function fun4(){
+$('#tab1 a').removeClass('select');
+$('#tab2 a').removeClass('select');
+$('#tab3 a').removeClass('select');
+$('#tab4 a').addClass('select');
+
+
+document.getElementById('div1').style.display='none';
+document.getElementById('div2').style.display='none';
+document.getElementById('div3').style.display='none';
+document.getElementById('div4').style.display='block';
+
+}
+
+window.onload = function() {
+	document.getElementById('tab1').onclick=fun1;
+	document.getElementById('tab2').onclick=fun2;		
+	document.getElementById('tab3').onclick=fun3;
+	document.getElementById('tab4').onclick=fun4;
+	
+	document.getElementById('div1').style.display='block';
+	document.getElementById('div2').style.display='none';	
+	document.getElementById('div3').style.display='none';
+	document.getElementById('div4').style.display='none';
+}
+</script>
+
+
+<link rel="stylesheet" href="css/smk-accordion.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body id="top">
+	<div class="main_wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" alt="" /></a>
+				</div>
+				<div class="srch">
+					<form method="" action="">
+						<div class="srch_sec">
+							<input type="text" placeholder="Your Location" />
+						</div>
+						<div class="srch_job">
+							<input type="text" placeholder="Search Jobs.." />
+						</div>
+						<div class="srch_icon">						
+							<input type="submit" value="" />
+						</div>
+					</form>
+				</div>
+				<div class="ttr_avtar">
+					<div class="avtr_img">
+						<a href="#"><img src="images/student_pic.png" alt="" /></a>
+					</div>
+					<div class="drop_mnu">
+						<a href="#"><img src="images/drop_img.png" alt="" /></a>
+					</div>
+					<div class="drop_menu">
+						<div class="bg_img">
+							<img src="images/menu_up.png" alt="" />
+						</div>
+						<ul>
+							<li class="active"><a href="#">Sign In</a></li>
+							<li><a href="#">Dashboard</a></li>
+							<li><a href="#">Register as Tutor</a></li>
+							<li><a href="#">Register as Student</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="mid_body tutor_profile_sec tutor_profile_sec2">
+			<div class="container">
+				<div class="edit_background_sec"><a href="#">Edit Background</a></div>
+				<div class="view_prof">
+					<a href="#">View Profile As</a>
+				</div>
+				<div class="profile_dtls_bx">
+					<div class="profile_dtls_bxLeft">
+						<div class="profile_dtls_bxLeftImg">
+							<img src="images/main_profile_pic.png">
+							<a href="#">Background Checked</a>
+						</div>
+						<div class="profile_dtls_bxLeftInfo">
+							<div class="profile_dtls_bxLeftInfoCont">
+								<h3>Lara Croft<span>(desired title)</span></h3>
+								<h4>Web Designer / Graphic Engineer</h4>
+								<p>Some street name, nr 25; Delhi, India</p>
+								<p>Available for one on one tutoring</p>
+								<p>Average fee <span>20$ / h</span></p>
+							</div>
+							<div class="profile_dtls_bxLeftInfoButton">
+								<ul>
+									<li><a href="#">Get in touch</a></li>
+									<li><a href="#">Follow</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="profile_dtls_bxRight">
+						<div class="profile_status">
+							<h3>PREMIUM MEMBER</h3>
+							<p>Last seen: 4 hours ago</p>
+							<p><img src="images/stars.png">  15 Reviews</p>
+							<p>80% Positive Feedback </p>							
+							<ul>
+								<li>Phone Checked</li>
+								<li>Email Checked</li>
+								<li>Facebook Checked</li>
+							</ul>							
+							<a href="#" class="rel_tur_link">See Related Tutors</a>							
+						</div>
+					</div>
+				</div>
+				<div class="profole_bot_sec">
+					<div class="profole_bot_secLeft">
+						<ul class="tab_list">
+							<li id="tab1"><a href="#url" class="select">Profile</a></li>
+							<li id="tab2"><a href="#url">Services</a></li>
+							<li id="tab3"><a href="#url">Education</a></li>
+							<li id="tab4"><a href="#url">Courses</a></li>
+						</ul>
+						<div class="tab_content" id="div1">
+							<h3>Tutor's description</h3>
+							<div class="tab_content_txt">
+							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+pariatur. </p>
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+mollit anim id est laborum.</p></div>
+						</div>
+						<div class="tab_content" id="div2">
+							<div class="accordion_example1"> 
+								
+								<h3>Covered Categories</h3>
+
+								<!-- Section 1 -->
+								<div class="accordion_in">
+								<div class="acc_head">Section 1</div>
+								<div class="acc_content">
+								<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+								Fusce aliquet neque et accumsan fermentum. Aliquam lobortis neque in nulla 
+								tempus, molestie fermentum purus euismod.</p>
+								</div>
+								</div>
+								
+								<!-- Section 2 -->
+								<div class="accordion_in  acc_active">
+								<div class="acc_head">Section 2</div>
+								<div class="acc_content">
+								<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+								fugiat nulla pariatur.</p>
+								</div>
+								</div>
+								
+								<!-- Section 3 -->
+								<div class="accordion_in">
+								<div class="acc_head">Section 3</div>
+								<div class="acc_content">
+								<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+								</div>
+								</div>
+						</div>
+						<div class="tab_content" id="div3">
+							<h3>Tutor's Education</h3>
+							<div class="tab_content_txt">
+							<p> Master of Technology (M.E./M.Tech.) from Punjab Technical University in 2014 Bachelor of Engineering (B.E.) from Vinayaka Missions University in 2009 Bachelor of Technology (B.Tech.) from West Bengal University of Technology in 2008</p>
+							</div>
+						</div>
+						<div class="tab_content" id="div4">
+							<h3>Provided Courses</h3>
+							<div class="tab_content_txt">
+							
+							<div class="tab_course_sec">
+								<img src="images/tab_course1.jpg">
+								<div class="tab_course_secInr">
+									<h3>Course Title</h3>
+									<p>Small description about the course.</p>
+									<p>Delhi, India</p>
+									<p>26 students attending</p>
+									<p><span class="red">20$ / hour</span></p>
+									<p>Last date for registration 20.09.2015</p>
+								</div>
+							</div>
+							
+							<div class="tab_course_sec">
+								<img src="images/tab_course2.jpg">
+								<div class="tab_course_secInr">
+									<h3>Course Title</h3>
+									<p>Small description about the course.</p>
+									<p>Delhi, India</p>
+									<p>26 students attending</p>
+									<p><span class="red">20$ / hour</span></p>
+									<p>Last date for registration 20.09.2015</p>
+								</div>
+							</div>
+							
+							<div class="tab_course_sec last">
+								<a href="#" class="show_all_link">show all</a>
+							</div>
+							
+							</div>
+						</div>
+					</div>
+					<div class="profole_bot_secRight">
+						<div class="right_cont_bx">
+							<div class="right_cont_bxInr">
+								<div class="right_cont_bxInrHdr">Contact Lara Croft</div>
+								<form>
+									<input type="text" placeholder="username" />
+									<input type="password" placeholder="password" />
+									<a href="#">Forgot your Password?</a>
+									<textarea placeholder="enter your message"></textarea>
+									<input type="submit" value="SEND" />
+									<button>REGISTER IF NOT</button>
+								</form>
+							</div>
+						</div>
+						<div class="cont_right_bx">
+							<div class="cont_right_bxHdr">Contact Lara Croft</div>
+							<div class="cont_right_bxInr">
+								<ul>
+									<li>
+										<img src="images/cont_pic.png">
+										<div class="cont_online_name"><a href="#">Abhijit Dhar</a></div>
+										<span class="on_off_status"></span>
+									</li>
+									<li>
+										<img src="images/cont_pic.png">
+										<div class="cont_online_name"><a href="#">Sourav Bhattacharya</a></div>
+										<span class="on_off_status"></span>
+									</li>
+									<li>
+										<img src="images/cont_pic.png">
+										<div class="cont_online_name"><a href="#">Moushumi M.</a></div>
+										<span class="on_off_status on"></span>
+									</li>
+									<li>
+										<img src="images/cont_pic.png">
+										<div class="cont_online_name"><a href="#">Sagnik Banerjee</a></div>
+										<span class="on_off_status on"></span>
+									</li>									
+								</ul>
+								<div class="cont_all_btn"><a href="#">see all</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+		<div class="footer">
+			<div class="nwsletter">
+				<div class="container">
+					<div class="nwsletterLeft">
+						<img src="images/nwslatter_icon.png">
+						<div class="nwsletterLeftInr">
+							<span>SUBSCRIBE TO OUR</span>NEWSLETTER
+						</div>
+					</div>
+					<div class="nwsletterRight">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+					</div>
+				</div>
+			</div>
+			<div class="black_ftr">
+				<div class="container">
+					<div class="black_ftrInr">
+					<a href="#top" class="bk_top"><img src="images/bk_to_top.png"></a>
+					<div class="footerColLeft">
+						
+						<div class="ftr_col">
+							<h3>Company</h3>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">FAQs</a></li>
+								<li><a href="#">Onine Tutoring</a></li>
+								<li><a href="#">For Students</a></li>
+								<li><a href="#">For Tutors</a></li>
+								<li><a href="#">Security</a></li>
+								<li><a href="#">Applications</a></li>								
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+						
+						<div class="ftr_col">
+							<h3>Subjects</h3>
+							<ul>
+								<li><a href="#">Economy</a></li>
+								<li><a href="#">MySQL</a></li>
+								<li><a href="#">Java</a></li>
+								<li><a href="#">Social Studies</a></li>
+								<li><a href="#">Law</a></li>
+								<li><a href="#">Academic</a></li>
+								<li><a href="#">HTML</a></li>								
+								<li><a href="#" class="ftr_blt_link">Browse all Subjects</a></li>
+							</ul>
+						</div>
+						
+						<div class="ftr_col">
+							<h3>Locations</h3>
+							<ul>
+								<li><a href="#">Bangalore</a></li>
+								<li><a href="#">Chennai</a></li>
+								<li><a href="#">Kolkata</a></li>
+								<li><a href="#">Mumbai</a></li>
+								<li><a href="#">New Delhi</a></li>
+								<li><a href="#">Panchkula</a></li>
+								<li><a href="#">Secundrabad</a></li>								
+								<li><a href="#" class="ftr_blt_link">View all Locations</a></li>
+							</ul>
+						</div>
+						
+					</div>
+					
+					<div class="footerColRight">
+						
+						<div class="ftr_col">
+							<h3>Tutoring</h3>
+							<ul>
+								<li><a href="#">Tutor Training</a></li>
+								<li><a href="#">Job Offers</a></li>
+								<li><a href="#">Search for Students</a></li>
+								<li><a href="#">Online Tutoring</a></li>
+								<li><a href="#">Premium Membership</a></li>
+							</ul>
+						</div>
+						
+						<div class="ftr_col">
+							<h3>Connect with Us</h3>
+							<ul class="sm">
+								<li><a href="#"> <img src="images/sm1.png"> Facebook</a></li>
+								<li><a href="#"> <img src="images/sm2.png"> Twitter</a></li>
+								<li><a href="#"> <img src="images/sm3.png"> Linkedin</a></li>
+								<li><a href="#"> <img src="images/sm4.png"> Youtube</a></li>
+								<li><a href="#"> <img src="images/sm5.png"> Google Plus</a></li>
+							</ul>
+						</div>
+						
+						<div class="app_stor">
+							<ul>
+								<li><a href="#"><img src="images/app_stor.png"></a></li>
+								<li><a href="#"><img src="images/app_stor2.png"></a></li>
+							</ul>
+						</div>
+												
+					</div>
+					</div>
+					
+				</div>
+			</div>
+		
+			<div class="ftr_bottom">
+				<div class="container">
+					<p class="copy">Copyright &copy;  2015 Findmyprivatetutor.com / All Rights Reserved</p>
+					<ul>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Intellectual Property Rights</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script>
+$(function() {
+  $('a.bk_top[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript" src="js/smk-accordion.js"></script> 
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	
+	$(".accordion_example1").smk_Accordion({
+		showIcon: true, //boolean
+		animation: true, //boolean
+		closeAble: false, //boolean
+		slideSpeed: 200 //integer, miliseconds
+	});
+
+	$(".accordion_example2").smk_Accordion({
+		showIcon: true, //boolean
+		animation: true, //boolean
+		closeAble: true, //boolean
+		slideSpeed: 200 //integer, miliseconds
+	});
+
+	$(".accordion_example3").smk_Accordion({
+		showIcon: false, //boolean
+		animation: true, //boolean
+		closeAble: false, //boolean
+		slideSpeed: 200 //integer, miliseconds
+	});
+
+	$(".accordion_example4").smk_Accordion({closeAble: true});
+
+	
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
